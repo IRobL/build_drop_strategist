@@ -1,0 +1,15 @@
+
+
+# Entry
+1. Complete that one tutorial
+2. Reflect
+
+# Advance
+1. Make authentication system work
+2. Make data modeling for drop nights
+3. Make data modeling for mechs
+4. Make
+
+# Complete
+
+
