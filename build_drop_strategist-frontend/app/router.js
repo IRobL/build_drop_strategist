@@ -10,7 +10,6 @@ Router.map(function() {
   this.route('books');
   this.route('authors');
   this.route('publishing-houses');
-  this.route('hellos');
 });
 
 export default Router;
