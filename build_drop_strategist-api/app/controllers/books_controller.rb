@@ -49,6 +49,7 @@ class BooksController < ApplicationController
       # params.require(:book).permit(:title, :price, :author_id, :publisher_id, :publisher_type)
       res = ActiveModelSerializers::Deserialization.jsonapi_parse(params, polymorphic: [:publisher])
       binding.pry
+      # ActiveModelSerializers.config.adapter = :attributes
       res[:publisher_type] = res[:publisher_type].singularize.capitalize
       res
     end

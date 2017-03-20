@@ -9,6 +9,10 @@ People can:
   - Sign up for Drops
   - View Challenge Points they have received
 
+## Starting servers
+- `bin/rails server --binding 0.0.0.0`
+- `ember server --proxy http://localhost:3000`
+
 
 ## References
 

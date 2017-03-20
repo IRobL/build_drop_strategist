@@ -1,0 +1,12 @@
+<h1>WELCOME TO THE APP</h1>
+{{outlet}}
+
+<button id="clear-completed" {{action "alertThis"}}>
+  go go gadget button
+</button>
+
+{{#if hasCompleted}}
+  <button id="clear-completed" {{action "clearCompleted"}}>
+    Clear completed ({{completed}})
+  </button>
+{{/if}}
