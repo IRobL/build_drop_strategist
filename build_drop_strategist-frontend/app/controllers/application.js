@@ -7,8 +7,14 @@ export default Ember.Controller.extend({
       console.log("THIS IS ALERT");
       // Create a model and then save it to excersise the app
       // debugger;
-      let book = this.store.createRecord('book', {title: "test book"});
-      book.save();
+
+      this.store.findRecord('author', 1).then( james => {
+
+        let book = this.store.createRecord('book',
+          { title: "Ember and Coal", price: 9.99, author: james, publisher: james});
+        book.save();
+      });
+
     }
   }
 });
