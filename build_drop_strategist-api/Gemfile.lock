@@ -1,3 +1,9 @@
+PATH
+  remote: ../..
+  specs:
+    mwo_api (0.1.0)
+      rails (~> 5.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -134,6 +140,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.10.2)
   listen (~> 3.0.5)
+  mwo_api!
   pry
   puma (~> 3.0)
   rails (~> 5.0.2)
