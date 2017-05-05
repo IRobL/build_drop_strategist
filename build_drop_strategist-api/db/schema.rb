@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170317190806) do
+ActiveRecord::Schema.define(version: 20170416143820) do
 
   create_table "authors", force: :cascade do |t|
     t.string   "name"
@@ -28,6 +28,23 @@ ActiveRecord::Schema.define(version: 20170317190806) do
     t.datetime "updated_at",                             null: false
     t.index ["author_id"], name: "index_books_on_author_id"
     t.index ["publisher_type", "publisher_id"], name: "index_books_on_publisher_type_and_publisher_id"
+  end
+
+  create_table "mwo_api_pilot_ranks", force: :cascade do |t|
+    t.integer  "crawl_batch"
+    t.integer  "season"
+    t.integer  "rank"
+    t.string   "pilot_name"
+    t.integer  "wins"
+    t.integer  "losses"
+    t.integer  "matches"
+    t.decimal  "winloss_ratio"
+    t.integer  "kills"
+    t.integer  "deaths"
+    t.decimal  "killdeath_ratio"
+    t.integer  "avg_match_score"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "publishing_houses", force: :cascade do |t|

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount MwoApi::Engine => "/mwo_api"
+
   resources :publishing_houses
   resources :authors
   resources :books
